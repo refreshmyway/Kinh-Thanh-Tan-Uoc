@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KINH THÁNH TRUYỀN THỐNG – TÂN ƯỚC</title>
+<title>KINH THÁNH TRUYỀN THỐNG – Cựu Ước &amp; Tân Ước</title>
 <style>
 body{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
@@ -15,11 +15,26 @@ h1{text-align:center;margin-bottom:28px}
 .playlist{
   display:block;text-align:center;background:#1f6feb;color:#fff;
   padding:12px;border-radius:12px;font-weight:700;text-decoration:none;margin-bottom:12px
- /* sửa để các chương nằm ngang */
 }
 
-.chapter a{display:block;padding:6px 4px;color:#8fd3ff;text-decoration:none}
+/* sửa để các chương nằm ngang */
+.chapter{
+  display: flex;          /* dùng flexbox */
+  flex-wrap: wrap;        /* xuống dòng nếu quá dài */
+  gap: 8px;               /* khoảng cách giữa các link */
+  justify-content: flex-start; /* canh trái, có thể dùng center nếu muốn */
+}
+.chapter a{
+  display:inline-block;   /* hiển thị ngang */
+  padding:6px 12px;
+  color:#8fd3ff;
+  text-decoration:none;
+  border:1px solid #333; /* tùy chọn viền nhẹ nếu muốn */
+  border-radius:6px;      /* bo góc */
+}
 .chapter a:hover{text-decoration:underline}
+
+
 </style>
 </head>
 <body>
@@ -456,6 +471,7 @@ h1{text-align:center;margin-bottom:28px}
 <a href="https://www.youtube.com/watch?v=F_CEZVMrE3A">Chương 21</a>
 <a href="https://www.youtube.com/watch?v=VpMNnCX9DTM">Chương 22</a>
 </div></div>
+
 
 
 
